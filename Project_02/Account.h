@@ -1,7 +1,13 @@
 #pragma once
-/*
-* File Prolog
-///////////////////////
+/**
+* Author: Westley Case & Morgan Allred
+* Assignment: Project 2
+* File: Account.cpp
+* Instructor: Dr. DeBry
+* Class: CS1410-001
+* Date Written:------------ ADD CORREECT DATE -----------------
+* Description: This program allows the users to deposite and withdraw form account balance
+*
 */
 
 #include <iostream>
@@ -40,9 +46,10 @@ public:
 	// Purpose: retrieve the person object associated to the account
 	// Parameters: none
 	// Returns: this is a test
-	Account::Person getPerson() const;
+	Person getPerson() const;
 
 	double makeDeposit(double _deposit);
+	
 	double makeWithdrawl(double _withdrawl);
 
 private:
