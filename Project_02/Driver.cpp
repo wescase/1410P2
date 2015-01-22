@@ -41,7 +41,9 @@ int main()
 	// Finally, pass the vector to your displayAccounts function to display the account information for each Account object in th*/e vector.
 	displayAccounts(accVector);
 
+	system("Pause");
 	return 0;
+
 }
 
 void displayAccounts(const vector<Account>& _aVector)
@@ -53,4 +55,6 @@ void displayAccounts(const vector<Account>& _aVector)
 	{
 		cout << _aVector[i].getAccountNumber() << "\t" << _aVector[i].getPerson().getName() << "\t" << _aVector[i].getPerson().getAddress() << "\t" << _aVector[i].getAccountBalance() << endl;
 	}
+
 }
+
