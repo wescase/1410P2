@@ -10,9 +10,25 @@
 *
 */
 
-#include <iostream>
 #include <string>
 using namespace std;
+
+
+class Person
+{
+public:
+	Person();
+	Person(string _name, string _address);
+
+	string getName() const;
+	string getAddress() const;
+
+private:
+	string name;
+	string address;
+};
+
+
 
 class Account
 {
@@ -48,27 +64,13 @@ public:
 	// Returns: this is a test
 	Person getPerson() const;
 
-	double makeDeposit(double _deposit);
+	// mutators
+	void makeDeposit(double _deposit);
 	
-	double makeWithdrawl(double _withdrawl);
+	void makeWithdrawl(double _withdrawl);
 
 private:
 	int accNumber;
 	double accBalance;
 	Person human;
 };
-
-class Person
-{
-public:
-	Person();
-	Person(string _name, string _address);
-
-	string getName() const;
-	string getAddress() const;
-
-private:
-	string name;
-	string address;
-};
-

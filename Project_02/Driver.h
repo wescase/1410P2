@@ -11,6 +11,6 @@
 #include<iostream>
 #include<string>
 #include<vector>
-#include "Account.cpp"
+#include "Account.h"
 
 void displayAccounts(const vector<Account>&);

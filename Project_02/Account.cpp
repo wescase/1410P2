@@ -62,13 +62,13 @@ string Person::getAddress() const
 	return address;
 }
 
-double Account::makeDeposit(double _deposit)
+void Account::makeDeposit(double _deposit)
 {
 	
 	accBalance += _deposit;
 }
 
-double Account::makeWithdrawl(double _withdrawl)
+void Account::makeWithdrawl(double _withdrawl)
 {
 	accBalance -= _withdrawl;
 }
