@@ -17,7 +17,7 @@ public:
 	//Returns: none
 	Account();
 
-	//parameterized constructor
+	// parameterized constructor
 	// Purpose: initalize the data members for object
 	// Parameters: Person object, double balance, int account number
 	// Returns: none
@@ -36,8 +36,10 @@ public:
 	double getAccountBalance() const;
 
 	// getPerson()
-	// Purpose:
-	Person getPerson() const;
+	// Purpose: retrieve the person object associated to the account
+	// Parameters: none
+	// Returns: this is a test
+	Account::Person getPerson() const;
 
 	double makeDeposit(double _deposit);
 	double makeWithdrawl(double _withdrawl);
