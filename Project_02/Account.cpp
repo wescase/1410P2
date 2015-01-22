@@ -1,4 +1,13 @@
-//file prologue
+/**
+* Author: Westley Case & Morgan Allred
+* Assignment: Project 2
+* File: Account.cpp
+* Instructor: Dr. DeBry
+* Class: CS1410-001
+* Date Written:------------ ADD CORREECT DATE -----------------
+* Description: This program allows the users to deposite and withdraw form account balance
+*
+*/
 
 #include "Account.h"
 
