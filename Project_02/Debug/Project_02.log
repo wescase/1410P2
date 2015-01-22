@@ -1,0 +1,101 @@
+﻿Build started 1/22/15 10:33:30 AM.
+     1>Project "\\psf\Home\Desktop\CS1410\Project_02\Project_02\Project_02.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Account.cpp Driver.cpp
+         Driver.cpp
+     1>\\psf\home\desktop\cs1410\project_02\project_02\account.h(31): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>\\psf\home\desktop\cs1410\project_02\project_02\account.h(31): error C2143: syntax error : missing ',' before '&'
+     1>\\psf\home\desktop\cs1410\project_02\project_02\account.h(49): error C2146: syntax error : missing ';' before identifier 'getPerson'
+     1>\\psf\home\desktop\cs1410\project_02\project_02\account.h(49): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>\\psf\home\desktop\cs1410\project_02\project_02\account.h(49): warning C4183: 'getPerson': missing return type; assumed to be a member function returning 'int'
+     1>\\psf\home\desktop\cs1410\project_02\project_02\account.h(58): error C2146: syntax error : missing ';' before identifier 'human'
+     1>\\psf\home\desktop\cs1410\project_02\project_02\account.h(58): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>\\psf\home\desktop\cs1410\project_02\project_02\account.cpp(22): error C2511: 'Account::Account(const Person &,double,int)' : overloaded member function not found in 'Account'
+                 \\psf\home\desktop\cs1410\project_02\project_02\account.h(18) : see declaration of 'Account'
+     1>\\psf\home\desktop\cs1410\project_02\project_02\account.cpp(23): error C2065: 'human' : undeclared identifier
+     1>\\psf\home\desktop\cs1410\project_02\project_02\account.cpp(24): error C2597: illegal reference to non-static member 'Account::accBalance'
+     1>\\psf\home\desktop\cs1410\project_02\project_02\account.cpp(25): error C2597: illegal reference to non-static member 'Account::accNumber'
+     1>\\psf\home\desktop\cs1410\project_02\project_02\account.cpp(39): error C2556: 'Person Account::getPerson(void) const' : overloaded function differs only by return type from 'int Account::getPerson(void) const'
+                 \\psf\home\desktop\cs1410\project_02\project_02\account.h(49) : see declaration of 'Account::getPerson'
+     1>\\psf\home\desktop\cs1410\project_02\project_02\account.cpp(39): error C2371: 'Account::getPerson' : redefinition; different basic types
+                 \\psf\home\desktop\cs1410\project_02\project_02\account.h(49) : see declaration of 'Account::getPerson'
+     1>\\psf\home\desktop\cs1410\project_02\project_02\account.cpp(40): error C2065: 'human' : undeclared identifier
+     1>\\psf\home\desktop\cs1410\project_02\project_02\driver.cpp(23): error C2661: 'Account::Account' : no overloaded function takes 3 arguments
+     1>\\psf\home\desktop\cs1410\project_02\project_02\driver.cpp(24): error C2661: 'Account::Account' : no overloaded function takes 3 arguments
+     1>\\psf\home\desktop\cs1410\project_02\project_02\driver.cpp(25): error C2661: 'Account::Account' : no overloaded function takes 3 arguments
+     1>\\psf\home\desktop\cs1410\project_02\project_02\driver.cpp(32): error C3867: 'std::vector<Account,std::allocator<_Ty>>::size': function call missing argument list; use '&std::vector<Account,std::allocator<_Ty>>::size' to create a pointer to member
+                 with
+                 [
+                     _Ty=Account
+                 ]
+     1>\\psf\home\desktop\cs1410\project_02\project_02\driver.cpp(32): error C2446: '<' : no conversion from 'unsigned int (__thiscall std::vector<Account,std::allocator<_Ty>>::* )(void) throw() const' to 'int'
+                 with
+                 [
+                     _Ty=Account
+                 ]
+                 There is no context in which this conversion is possible
+     1>\\psf\home\desktop\cs1410\project_02\project_02\driver.cpp(32): error C2297: '<' : illegal, right operand has type 'unsigned int (__thiscall std::vector<Account,std::allocator<_Ty>>::* )(void) throw() const'
+                 with
+                 [
+                     _Ty=Account
+                 ]
+     1>\\psf\home\desktop\cs1410\project_02\project_02\driver.cpp(37): error C3867: 'std::vector<Account,std::allocator<_Ty>>::size': function call missing argument list; use '&std::vector<Account,std::allocator<_Ty>>::size' to create a pointer to member
+                 with
+                 [
+                     _Ty=Account
+                 ]
+     1>\\psf\home\desktop\cs1410\project_02\project_02\driver.cpp(37): error C2446: '<' : no conversion from 'unsigned int (__thiscall std::vector<Account,std::allocator<_Ty>>::* )(void) throw() const' to 'int'
+                 with
+                 [
+                     _Ty=Account
+                 ]
+                 There is no context in which this conversion is possible
+     1>\\psf\home\desktop\cs1410\project_02\project_02\driver.cpp(37): error C2297: '<' : illegal, right operand has type 'unsigned int (__thiscall std::vector<Account,std::allocator<_Ty>>::* )(void) throw() const'
+                 with
+                 [
+                     _Ty=Account
+                 ]
+     1>\\psf\home\desktop\cs1410\project_02\project_02\driver.cpp(52): error C3867: 'std::vector<Account,std::allocator<_Ty>>::size': function call missing argument list; use '&std::vector<Account,std::allocator<_Ty>>::size' to create a pointer to member
+                 with
+                 [
+                     _Ty=Account
+                 ]
+     1>\\psf\home\desktop\cs1410\project_02\project_02\driver.cpp(52): error C2446: '<' : no conversion from 'unsigned int (__thiscall std::vector<Account,std::allocator<_Ty>>::* )(void) throw() const' to 'int'
+                 with
+                 [
+                     _Ty=Account
+                 ]
+                 There is no context in which this conversion is possible
+     1>\\psf\home\desktop\cs1410\project_02\project_02\driver.cpp(52): error C2297: '<' : illegal, right operand has type 'unsigned int (__thiscall std::vector<Account,std::allocator<_Ty>>::* )(void) throw() const'
+                 with
+                 [
+                     _Ty=Account
+                 ]
+     1>\\psf\home\desktop\cs1410\project_02\project_02\driver.cpp(54): error C3867: 'Account::getAccountNumber': function call missing argument list; use '&Account::getAccountNumber' to create a pointer to member
+     1>\\psf\home\desktop\cs1410\project_02\project_02\driver.cpp(54): error C2296: '+' : illegal, left operand has type 'int (__thiscall Account::* )(void) const'
+     1>\\psf\home\desktop\cs1410\project_02\project_02\driver.cpp(54): error C2228: left of '.getName' must have class/struct/union
+     1>\\psf\home\desktop\cs1410\project_02\project_02\driver.cpp(54): error C2228: left of '.getAddress' must have class/struct/union
+         Account.cpp
+     1>\\psf\home\desktop\cs1410\project_02\project_02\account.h(31): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>\\psf\home\desktop\cs1410\project_02\project_02\account.h(31): error C2143: syntax error : missing ',' before '&'
+     1>\\psf\home\desktop\cs1410\project_02\project_02\account.h(49): error C2146: syntax error : missing ';' before identifier 'getPerson'
+     1>\\psf\home\desktop\cs1410\project_02\project_02\account.h(49): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>\\psf\home\desktop\cs1410\project_02\project_02\account.h(49): warning C4183: 'getPerson': missing return type; assumed to be a member function returning 'int'
+     1>\\psf\home\desktop\cs1410\project_02\project_02\account.h(58): error C2146: syntax error : missing ';' before identifier 'human'
+     1>\\psf\home\desktop\cs1410\project_02\project_02\account.h(58): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>\\psf\home\desktop\cs1410\project_02\project_02\account.cpp(22): error C2511: 'Account::Account(const Person &,double,int)' : overloaded member function not found in 'Account'
+                 \\psf\home\desktop\cs1410\project_02\project_02\account.h(18) : see declaration of 'Account'
+     1>\\psf\home\desktop\cs1410\project_02\project_02\account.cpp(23): error C2065: 'human' : undeclared identifier
+     1>\\psf\home\desktop\cs1410\project_02\project_02\account.cpp(24): error C2597: illegal reference to non-static member 'Account::accBalance'
+     1>\\psf\home\desktop\cs1410\project_02\project_02\account.cpp(25): error C2597: illegal reference to non-static member 'Account::accNumber'
+     1>\\psf\home\desktop\cs1410\project_02\project_02\account.cpp(39): error C2556: 'Person Account::getPerson(void) const' : overloaded function differs only by return type from 'int Account::getPerson(void) const'
+                 \\psf\home\desktop\cs1410\project_02\project_02\account.h(49) : see declaration of 'Account::getPerson'
+     1>\\psf\home\desktop\cs1410\project_02\project_02\account.cpp(39): error C2371: 'Account::getPerson' : redefinition; different basic types
+                 \\psf\home\desktop\cs1410\project_02\project_02\account.h(49) : see declaration of 'Account::getPerson'
+     1>\\psf\home\desktop\cs1410\project_02\project_02\account.cpp(40): error C2065: 'human' : undeclared identifier
+         Generating Code...
+     1>Done Building Project "\\psf\Home\Desktop\CS1410\Project_02\Project_02\Project_02.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:01.48
