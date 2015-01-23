@@ -13,6 +13,7 @@
 
 int main()
 {
+	// Create vector for accounts
 	vector<Account> accVector;
 
 	// Create three person objects.You can use the names and addresses shown in the example output, or use your imagination to come up with something interesting.
@@ -49,15 +50,16 @@ int main()
 
 void displayAccounts(const vector<Account>& _aVector)
 {
+	// Console out text
 	cout << "National Bank\n" << endl;
 	cout << "Account\tAccount" << endl;
 	cout << "Number\tName\t\t\tAddress\t\t\tBalance\n" << endl;
+	// Loop through the vector to get account info to display
 	for (unsigned i = 0; i < _aVector.size(); i++)
 	{
 		cout.setf(ios::fixed);
 		cout.precision(2);
 		cout << _aVector[i].getAccountNumber() << "\t" << _aVector[i].getPerson().getName() << "\t\t" << _aVector[i].getPerson().getAddress() << "\t\t$" << _aVector[i].getAccountBalance() << endl;
 	}
-
 }
 

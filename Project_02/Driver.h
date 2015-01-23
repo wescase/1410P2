@@ -13,5 +13,9 @@
 #include<vector>
 #include "Account.h"
 
+// displayAccounts
+// Purpose: to display the account info to the user in console
+// Parameters: vector, of Accounts
+// Returns: none
 void displayAccounts(const vector<Account>&);
 

@@ -4,14 +4,14 @@
 * File: Account.cpp
 * Instructor: Dr. DeBry
 * Class: CS1410-001
-* Date Written:------------ ADD CORREECT DATE -----------------
+* Date Written: January 22, 2014
 * Description: This program allows the users to deposite and withdraw form account balance
 *
 */
 
 #include "Account.h"
 
-
+// --------------- Account Class Methods -------------------
 Account::Account()
 {
 	accBalance = 0.00;
@@ -40,6 +40,18 @@ Person Account::getPerson() const
 	return human;
 }
 
+void Account::makeDeposit(double _deposit)
+{
+
+	accBalance += _deposit;
+}
+
+void Account::makeWithdrawl(double _withdrawl)
+{
+	accBalance -= _withdrawl;
+}
+
+// ----------------- Person Class Methods ----------------------
 Person::Person()
 {
 	name = "";
@@ -60,15 +72,4 @@ string Person::getName() const
 string Person::getAddress() const
 {
 	return address;
-}
-
-void Account::makeDeposit(double _deposit)
-{
-	
-	accBalance += _deposit;
-}
-
-void Account::makeWithdrawl(double _withdrawl)
-{
-	accBalance -= _withdrawl;
 }
