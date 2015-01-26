@@ -27,7 +27,7 @@ public:
 	// Purpose: initialize object properties to passed in values
 	// Parameters: string of Person name, string of Person address
 	// returns: none
-	Person(string _name, string _address);
+	Person(const string& _name, const string& _address);
 
 	// getName()
 	// Purpose: retrieve the Person objects name property

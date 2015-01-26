@@ -58,7 +58,7 @@ Person::Person()
 	address = "";
 }
 
-Person::Person(string _name, string _address)
+Person::Person(const string& _name, const string& _address)
 {
 	name = _name;
 	address = _address;

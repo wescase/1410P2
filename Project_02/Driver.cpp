@@ -21,9 +21,9 @@ int main()
 	Person p2("Westley C.", "4321 Cir.");
 	Person p3("Homer Simpson", "5748 Spring");
 	// Create three Account objects, where each account object contains one of your Person objects.Initialize the balance in the first account object to $500.00, the balance in the second to $1000.00, and the balance in the third to $1200.00.
-	Account a1(p1, 500.00, 1);
-	Account a2(p2, 1000.00, 2);
-	Account a3(p3, 1200.00, 3);
+	Account a1(p1, INIT_1, ACC_1);
+	Account a2(p2, INIT_2, ACC_2);
+	Account a3(p3, INIT_3, ACC_3);
 
 	// Push these Account objects into the vector.
 	accVector.push_back(a1);
@@ -32,12 +32,12 @@ int main()
 	// Using a for loop, add $25.00 to each account.
 	for (unsigned i = 0; i < accVector.size(); i++)
 	{
-		accVector[i].makeDeposit(25.00);
+		accVector[i].makeDeposit(DEPOSIT);
 	}
 	// Using a second for loop, withdraw $100.00 from each account.
 	for (unsigned i = 0; i < accVector.size(); i++)
 	{
-		accVector[i].makeWithdrawl(100.00);
+		accVector[i].makeWithdrawl(WITHDRAW);
 	}
 	// Finally, pass the vector to your displayAccounts function to display the account information for each Account object in th*/e vector.
 	displayAccounts(accVector);
